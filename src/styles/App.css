@@ -1,0 +1,15 @@
+* {
+  background-color: #212325;
+  font-family: cursive;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    text-align: center;
+    color: gold;
+    font-size: 3em;
+  }
+}
