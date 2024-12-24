@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import "./styles/App.css";
 import SearchBar from "./component/SearchBar";
+import MoviesList from "./component/MoviesList";
 
 const API_URL = `http://www.omdbapi.com?apikey=${import.meta.env.VITE_API_KEY}`;
 
@@ -8,11 +9,12 @@ function App() {
   useEffect(() => {
     fetchData("Spiderman").then("");
   }, []);
-  
+
   return (
     <div className="App">
       <h1>MovieLand</h1>
       <SearchBar />
+      <MoviesList />
     </div>
   );
 }

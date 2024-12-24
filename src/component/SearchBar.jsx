@@ -1,8 +1,16 @@
-import "../styles/SearchBar.css"
+import "../styles/SearchBar.css";
+import SearchLogo from "../assets/search.svg";
+
 function SearchBar() {
   return (
-    <div>
-      <input type="search" placeholder="Search for movies"></input>
+    <div className="search-bar">
+      <input
+        type="text"
+        placeholder="Search for movies"
+        value="Superman"
+        onChange={() => {}}
+      />
+      <img src={SearchLogo} alt="search" onClick={() => {}}></img>
     </div>
   );
 }
