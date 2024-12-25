@@ -19,6 +19,9 @@
   .type {
     padding-top: 1em;
   }
+  .title{
+    color: gold;
+  }  
   .type,
   .title {
     padding-left: 1em;
