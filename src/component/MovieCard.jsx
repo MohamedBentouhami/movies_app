@@ -1,16 +1,9 @@
-import "../styles/MovieContainer.css";
+import "../styles/MovieCard.css";
 
 function MovieCard({ movie }) {
   return (
     <div className="movie">
-      <img
-        src={
-          movie.Poster !== "N/A"
-            ? movie.Poster
-            : "https://via.placeholder.com/400"
-        }
-        alt={movie.Title}
-      ></img>
+      <img src={movie.Poster} alt={movie.Title}></img>
       <div className="type">
         <span>{movie.Type}</span>
       </div>

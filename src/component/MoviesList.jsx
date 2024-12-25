@@ -7,7 +7,7 @@ function MoviesList({ movies }) {
       {movies.length == 0 && <div className="empty">No movies found</div>}
       <div className="movies_list">
         {movies.map((movie, index) => (
-          <MovieCard movie={movie} key={index} />
+          movie.Poster !== "N/A" && <MovieCard movie={movie} key={index} />
         ))}
       </div>
     </div>
